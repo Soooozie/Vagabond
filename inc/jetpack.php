@@ -21,6 +21,12 @@ function vagabond_jetpack_setup() {
 		'footer'    => 'page',
 	) );
 
+	//Add Comic Feature
+	add_theme_support('jetpack-comic');
+
+	add_theme_support('featured-content', array(
+		'featured_content_filter' => 'lel_get_featured_posts', 'max_posts' => 20,));
+
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 }

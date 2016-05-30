@@ -76,7 +76,6 @@ function vagabond_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-	add_theme_support('jetpack-comic');
 }
 endif;
 add_action( 'after_setup_theme', 'vagabond_setup' );

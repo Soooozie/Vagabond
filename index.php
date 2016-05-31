@@ -12,7 +12,24 @@
  * @package Vagabond
  */
 
-get_header(); ?>
+get_header(); $comic_args=array(
+	'posts_per_page' => 1,
+	'post_type'			 => 'jetpack-comic',
+);
+$comic = new WP_Query($comic_args);
+?>
+<?php
+	if ($comic->have_posts()):?>
+	<div class="entry-comic">
+		<?php
+				while ($comic->have_posts()): $comic->the_post();
+				get_template_part('template-parts/content', 'comic');
+			endwhile;?>
+		</div>
+	<?php endif; ?>
+
+	<?php wp_reset_postdata();?>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

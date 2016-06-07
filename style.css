@@ -20,6 +20,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /* My Style File from scratch */
+
+/*Structure*/
+.full {
+
+}
+.main-page {
+		max-width: 100%; /*set this max-width to allow responsiveness*/
+		margin: 0 auto;
+}
+.inner {
+		padding: 2em 0;
+}
+#primary {
+		float: left;
+		padding-right: 50px;
+		width: 66.5%;
+}
+#secondary {
+		float: left;
+		width: 33.5%;
+}
+
 /*clearings*/
 .clear:before,
 .clear:after,
@@ -45,6 +67,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*	background-image: url('Vagabondtexture.png');*/ /* Haven't quite figured this part out yet */
 	display: block;
 	clear: both;
+	/*opacity: 0.4;*/ /* Use this to change header opacity */
 	margin: 0;
 	max-width: 100%;
 /* box-shadow: 0px 1px 3px grey; */ /* Makes lines softer (not sure if good yet) */
@@ -184,4 +207,10 @@ button {
 	display: none; /* Hides Primary Menu Button in header */
 
 
+}
+
+/* Comics layout */
+.single-jetpack-comic .site-content{
+	margin: 0 auto;
+	max-width: 1000px;
 }

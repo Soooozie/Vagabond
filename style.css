@@ -214,3 +214,54 @@ button {
 	margin: 0 auto;
 	max-width: 1000px;
 }
+
+.entry-comic {
+	/*background: #efefef;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	margin: 0 0 1.6em;
+	padding: 1.6em;*/
+}
+
+.entry-comic img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* Comic Title? */
+.home .entry-title,
+.home .entry-title a {
+	font-size: 20px;
+	font-size: 2.0rem;
+	line-height: normal;
+	max-width: 90%;
+}
+
+/* Post Title */
+.home .hentry.type-post {
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	margin: 0 0 1.6em;
+	width: 100%;
+}
+
+/* Blog Layout */
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+
+.site-content {
+	margin: 0 25% 0 0;
+}
+
+/* Recent Posts/Archives/Etc Stuff on Pg*/
+#secondary {
+	float: right;
+	overflow: hidden;
+	position: relative;
+	width: 20%;
+	z-index: 1;
+}
